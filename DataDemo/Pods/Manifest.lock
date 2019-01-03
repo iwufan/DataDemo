@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.8.0)
+  - DJExtension (1.2.4):
+    - SnapKit
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - ObjectMapper (3.4.2)
+  - Result (4.0.0)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - DJExtension (~> 1.2.4)
+  - Moya
+  - ObjectMapper
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DJExtension
+    - Moya
+    - ObjectMapper
+    - Result
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  DJExtension: 61aabf6f89dec9671c02dad76e4486afc7eacebd
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: d7b31417f1b0f3de1e8d0b62cddff20d425a1c08
+
+COCOAPODS: 1.6.0.beta.2

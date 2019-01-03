@@ -1,0 +1,6 @@
+framework module DJExtension {
+  umbrella header "DJExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
