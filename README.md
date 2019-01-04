@@ -48,8 +48,9 @@ extension NovelService: TargetType {
 }
 ```
 ### Base Request with SwiftyJSON
+In `NovelService.swift` file,
 1. create a provider.
-2. create another extension for NovelService, and define a static request function.
+2. create another extension for `NovelService`, and define a static request function.
 ###### example:
 ```
 private let novelProvider = MoyaProvider<NovelService>()
