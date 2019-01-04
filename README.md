@@ -12,7 +12,7 @@ Hot novels list api：[https://www.apiopen.top/novelApi](https://www.apiopen.top
 3. define a enum value.
 4. create extension for `NovelService`, and implement `TargetType` protocol.
 5. implement all related functions of `TargetType` protocol.
-example:
+###### example:
 ```
 enum NovelService {
     case novelList
@@ -50,7 +50,7 @@ extension NovelService: TargetType {
 ### Base Request with SwiftyJSON
 1. create a provider.
 2. create another extension for NovelService, and define a static request function.
-example:
+###### example:
 ```
 private let novelProvider = MoyaProvider<NovelService>()
 ```
@@ -91,7 +91,7 @@ extension NovelService {
 ```
 You can get a dictionary in the success closure.
 ### ObjectMapper Related
-example:
+###### example:
 ```
 import Foundation
 import ObjectMapper
@@ -121,7 +121,7 @@ struct Novel: Mappable {
 ### Dictionary to model in view controller
 1. define a data array.
 2. convert dictionary array to model array.
-example:
+###### example:
 ```
 lazy var dataArray: [Novel] = {
         return []
