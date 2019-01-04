@@ -92,6 +92,7 @@ extension NovelService {
 ```
 You can get a dictionary in the success closure.
 ### ObjectMapper Related
+define a struct and implement the Mappable protocol.
 ###### example:
 ```
 import Foundation
