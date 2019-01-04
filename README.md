@@ -9,9 +9,9 @@ Hot novels list api：[https://www.apiopen.top/novelApi](https://www.apiopen.top
 ### Moya Related
 1. create file `NovelService.swift`.
 2. create enum `NovelService`.
-3. define a 
-3. create extension for `NovelService`, and implement `TargetType` protocol.
-4. implement all related functions of `TargetType` protocol.
+3. define a enum value.
+4. create extension for `NovelService`, and implement `TargetType` protocol.
+5. implement all related functions of `TargetType` protocol.
 example:
 ```
 enum NovelService {
@@ -144,5 +144,3 @@ Please refer to the demo for more details.
 [悟饭哪](https://www.jianshu.com/u/819830158b47)
 
 ###### Thanks
-[悟饭哪](https://www.jianshu.com/u/819830158b47)h
-[悟饭哪](https://www.jianshu.com/u/819830158b47)
