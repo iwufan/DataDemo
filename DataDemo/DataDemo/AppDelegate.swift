@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,10 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         
+        setupSVProgressHUD()
+        
         return true
     }
 
-    
+    /// 设置提示样式
+    func setupSVProgressHUD() {
+        
+        SVProgressHUD.setBackgroundColor(UIColor.black.withAlphaComponent(0.8))
+        SVProgressHUD.setForegroundColor(.white)
+    }
 
 }
 

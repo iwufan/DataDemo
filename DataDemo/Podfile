@@ -11,5 +11,7 @@ target 'DataDemo' do
   pod 'ObjectMapper'
 
   pod 'DJExtension', '~> 1.2.4'
+  pod 'Kingfisher'
+  pod 'SVProgressHUD'
 
 end

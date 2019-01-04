@@ -42,6 +42,6 @@ extension HomeViewController {
     
     @objc private func clickLoadData() {
         
-        dj_push(StudentViewController())
+        dj_push(NovelListViewController())
     }
 }

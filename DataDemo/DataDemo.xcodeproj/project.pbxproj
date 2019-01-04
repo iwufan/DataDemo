@@ -12,9 +12,12 @@
 		E47063FE21DDAACD00C66671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47063FD21DDAACD00C66671 /* Assets.xcassets */; };
 		E470640121DDAACD00C66671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47063FF21DDAACD00C66671 /* LaunchScreen.storyboard */; };
 		E470640A21DDAE2A00C66671 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470640921DDAE2A00C66671 /* HomeViewController.swift */; };
-		E470640C21DDAE4800C66671 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470640B21DDAE4800C66671 /* StudentViewController.swift */; };
-		E470641321DDBEEE00C66671 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641221DDBEEE00C66671 /* StudentCell.swift */; };
 		E470641521DDDFA400C66671 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641421DDDFA400C66671 /* Student.swift */; };
+		E470641721DEF98600C66671 /* Novel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641621DEF98600C66671 /* Novel.swift */; };
+		E470641921DEFA7D00C66671 /* NovelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641821DEFA7D00C66671 /* NovelCell.swift */; };
+		E470641B21DEFE1400C66671 /* NovelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641A21DEFE1400C66671 /* NovelListViewController.swift */; };
+		E470641E21DEFE8600C66671 /* NovelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641D21DEFE8600C66671 /* NovelService.swift */; };
+		E470642121DF068A00C66671 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470642021DF068A00C66671 /* HUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +30,12 @@
 		E470640021DDAACD00C66671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E470640221DDAACD00C66671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E470640921DDAE2A00C66671 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E470640B21DDAE4800C66671 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
-		E470641221DDBEEE00C66671 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		E470641421DDDFA400C66671 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E470641621DEF98600C66671 /* Novel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Novel.swift; sourceTree = "<group>"; };
+		E470641821DEFA7D00C66671 /* NovelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelCell.swift; sourceTree = "<group>"; };
+		E470641A21DEFE1400C66671 /* NovelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelListViewController.swift; sourceTree = "<group>"; };
+		E470641D21DEFE8600C66671 /* NovelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelService.swift; sourceTree = "<group>"; };
+		E470642021DF068A00C66671 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 		E47063F521DDAACA00C66671 /* DataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E470641F21DF068000C66671 /* Tool */,
+				E470641C21DEFE7500C66671 /* Service */,
 				E470640D21DDAE4F00C66671 /* Controller */,
 				E470640F21DDAE7B00C66671 /* View */,
 				E470640E21DDAE6800C66671 /* Model */,
@@ -105,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E470640921DDAE2A00C66671 /* HomeViewController.swift */,
-				E470640B21DDAE4800C66671 /* StudentViewController.swift */,
+				E470641A21DEFE1400C66671 /* NovelListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E470641421DDDFA400C66671 /* Student.swift */,
+				E470641621DEF98600C66671 /* Novel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,9 +130,25 @@
 		E470640F21DDAE7B00C66671 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E470641221DDBEEE00C66671 /* StudentCell.swift */,
+				E470641821DEFA7D00C66671 /* NovelCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E470641C21DEFE7500C66671 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E470641D21DEFE8600C66671 /* NovelService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E470641F21DF068000C66671 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E470642021DF068A00C66671 /* HUD.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +230,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DataDemo/Pods-DataDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DJExtension/DJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -217,9 +244,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -257,11 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E470640C21DDAE4800C66671 /* StudentViewController.swift in Sources */,
+				E470641921DEFA7D00C66671 /* NovelCell.swift in Sources */,
+				E470642121DF068A00C66671 /* HUD.swift in Sources */,
+				E470641721DEF98600C66671 /* Novel.swift in Sources */,
 				E47063F721DDAACA00C66671 /* AppDelegate.swift in Sources */,
+				E470641E21DEFE8600C66671 /* NovelService.swift in Sources */,
 				E470640A21DDAE2A00C66671 /* HomeViewController.swift in Sources */,
 				E470641521DDDFA400C66671 /* Student.swift in Sources */,
-				E470641321DDBEEE00C66671 /* StudentCell.swift in Sources */,
+				E470641B21DEFE1400C66671 /* NovelListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

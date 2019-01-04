@@ -1,8 +1,8 @@
 //
-//  StudentViewController.swift
+//  NovelListViewController.swift
 //  DataDemo
 //
-//  Created by 贾大伟 on 2019/1/3.
+//  Created by 贾大伟 on 2019/1/4.
 //  Copyright © 2019 david. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import UIKit
 import DJExtension
 import ObjectMapper
 
-class StudentViewController: UIViewController {
+class NovelListViewController: UIViewController {
     
-    lazy var dataArray: [Student] = {
+    lazy var dataArray: [Novel] = {
         return []
     }()
     
@@ -21,7 +21,7 @@ class StudentViewController: UIViewController {
         let tableView = UITableView(delegate: self, dataSource: self, superView: view, closure: { (make) in
             make.edges.equalTo(view)
         })
-        tableView.rowHeight = 50
+        tableView.rowHeight = 100
         tableView.backgroundColor = djWhite
         
         return tableView
@@ -30,25 +30,18 @@ class StudentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setNavBar()
         loadData()
     }
     
     private func setNavBar() {
         
         view.backgroundColor = djWhite
-        navigationItem.title = "人员列表"
+        navigationItem.title = "热门小说"
     }
 }
 
-extension StudentViewController {
-    
-    private func addViews() {
-        
-        
-    }
-}
-
-extension StudentViewController: UITableViewDelegate, UITableViewDataSource {
+extension NovelListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -56,27 +49,25 @@ extension StudentViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = StudentCell.cell(tableView: tableView, indexPath: indexPath)
-        cell.student = dataArray[indexPath.row]
-
+        let cell = NovelCell.cell(tableView: tableView, indexPath: indexPath)
+        cell.novel = dataArray[indexPath.row]
+        
         return cell
     }
 }
 
-extension StudentViewController {
+extension NovelListViewController {
     
     private func loadData() {
         
-        for i in 0..<20 {
-            
-            var model = Student()
-            model.name = "张三\(i)"
-            model.phone = "15988889999"
-            model.address = "北京市望京绿地中心"
-            
-            dataArray.append(model)
-        }
+        HUD.show()
         
-        self.tableView.reloadData()
+        NovelService.request(.novelList, success: { (res) in
+            
+            HUD.hide()
+            
+            self.dataArray = Mapper<Novel>().mapArray(JSONArray: res["data"] as! [[String : Any]])
+            self.tableView.reloadData()
+        })
     }
 }
