@@ -124,8 +124,8 @@ struct Novel: Mappable {
 ###### example:
 ```
 lazy var dataArray: [Novel] = {
-        return []
-    }()
+    return []
+}()
 ```
 ```
 HUD.show()
