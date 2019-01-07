@@ -12,7 +12,6 @@
 		E47063FE21DDAACD00C66671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47063FD21DDAACD00C66671 /* Assets.xcassets */; };
 		E470640121DDAACD00C66671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47063FF21DDAACD00C66671 /* LaunchScreen.storyboard */; };
 		E470640A21DDAE2A00C66671 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470640921DDAE2A00C66671 /* HomeViewController.swift */; };
-		E470641521DDDFA400C66671 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641421DDDFA400C66671 /* Student.swift */; };
 		E470641721DEF98600C66671 /* Novel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641621DEF98600C66671 /* Novel.swift */; };
 		E470641921DEFA7D00C66671 /* NovelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641821DEFA7D00C66671 /* NovelCell.swift */; };
 		E470641B21DEFE1400C66671 /* NovelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470641A21DEFE1400C66671 /* NovelListViewController.swift */; };
@@ -30,7 +29,6 @@
 		E470640021DDAACD00C66671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E470640221DDAACD00C66671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E470640921DDAE2A00C66671 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E470641421DDDFA400C66671 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E470641621DEF98600C66671 /* Novel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Novel.swift; sourceTree = "<group>"; };
 		E470641821DEFA7D00C66671 /* NovelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelCell.swift; sourceTree = "<group>"; };
 		E470641A21DEFE1400C66671 /* NovelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelListViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		E470640E21DDAE6800C66671 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E470641421DDDFA400C66671 /* Student.swift */,
 				E470641621DEF98600C66671 /* Novel.swift */,
 			);
 			path = Model;
@@ -292,7 +289,6 @@
 				E47063F721DDAACA00C66671 /* AppDelegate.swift in Sources */,
 				E470641E21DEFE8600C66671 /* NovelService.swift in Sources */,
 				E470640A21DDAE2A00C66671 /* HomeViewController.swift in Sources */,
-				E470641521DDDFA400C66671 /* Student.swift in Sources */,
 				E470641B21DEFE1400C66671 /* NovelListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
